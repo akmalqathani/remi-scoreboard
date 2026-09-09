@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game - Scoreboard Remi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <div class="game-top">
+    <span class="target-pill" id="target-display">Target: 0</span>
+    <button class="reset-link" id="reset-btn" type="button">Mulai game baru (Reset)</button>
+  </div>
+
+  <div id="winner-banner" class="winner-banner hidden">
+    <span class="crown">♠ ♥ ♦ ♣</span>
+    <h2 id="winner-name">Pemenang!</h2>
+    <p id="winner-desc"></p>
+  </div>
+
+  <div class="table-scroll">
+    <table>
+      <thead><tr id="table-head"><th>Ronde</th></tr></thead>
+      <tbody id="table-body"></tbody>
+      <tfoot><tr id="table-foot"><td>Total</td></tr></tfoot>
+    </table>
+  </div>
+
+  <div class="add-round" id="add-round-section">
+    <h3>Ronde berikutnya</h3>
+    <div id="round-inputs"></div>
+    <div class="action-row">
+      <button class="undo-btn" id="undo-btn" type="button" disabled>↺ Undo</button>
+      <button class="primary-btn" id="add-round-btn" type="button">Tambah Ronde</button>
+    </div>
+  </div>
+    <footer>
+       <center> &copy; 2026 Fatih Akmal Alqathani. <center>
+    </footer>
+</div>
+
+<script type="module" src="scoreboard.js"></script>
+</body>
+</html>

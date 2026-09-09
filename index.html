@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Setup - Scoreboard Remi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="suit-row">♠ ♥ ♦ ♣</div>
+    <h1>Scoreboard Remi</h1>
+    <p class="sub">Tentukan pemain dan target skor untuk memulai permainan.</p>
+  </header>
+
+  <div id="global-error" class="error-box hidden"></div>
+
+  <div class="card">
+    <div class="field">
+      <label>Nama pemain</label>
+      <div id="player-list"></div>
+      <button class="ghost-btn" id="add-player-btn" type="button">+ Tambah pemain</button>
+    </div>
+
+    <div class="field">
+      <label>Skor target</label>
+      <input type="number" id="target-score" placeholder="Contoh: 100" inputmode="numeric">
+    </div>
+    <center><p class="hint">Permainan selesai begitu ada pemain yang menyentuh angka ini.</p></center>
+
+    <button class="primary-btn" id="start-btn" type="button">Mulai Game</button>
+  </div>
+    <footer>
+       <center> &copy; 2026 Fatih Akmal Alqathani. <center>
+    </footer>
+</div>
+
+<script type="module" src="setup.js"></script>
+</body>
+</html>
